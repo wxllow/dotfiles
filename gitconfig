@@ -1,0 +1,7 @@
+[user]
+	email = willow@wxllow.dev
+	name = wxllow
+[init]
+	defaultBranch = main
+[core]
+	editor = vim
