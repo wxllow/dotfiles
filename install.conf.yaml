@@ -1,17 +1,13 @@
 - clean: ['~']
 
 - link:
-    ~/.profile: profile
-    ~/.bashrc: bashrc
     ~/.gitconfig: gitconfig
     ~/.ssh/config:
         path: ssh/config
         create: true
-    ~/.zprofile: zprofile
-    ~/.zshenv: zshenv
     ~/.zshrc: zshrc
-    ~/.Xmodmap: Xmodmap
-    ~/.Xdefaults: Xdefaults
     ~/.xinitrc: xinitrc
-
+    ~/.config/alacritty: alacritty
+    ~/.config/picom: picom
+    ~/.config/kitty: kitty
 

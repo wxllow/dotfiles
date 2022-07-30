@@ -7,13 +7,13 @@ export PATH="$HOME/.toaster/bin:$PATH"
 
 . "$HOME/.cargo/env"
 
+# Add toaster to path :)
+export PATH="$HOME/.toaster/bin:$PATH"
+[0m
+
+# Add toaster to path :)
+export PATH="$HOME/.toaster/bin:$PATH"
+[0m
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/bashrc.post.bash" ]] && . "$HOME/.fig/shell/bashrc.post.bash"
-
-# Add toaster to path :)
-export PATH="$HOME/.toaster/bin:$PATH"
-[0m
-
-# Add toaster to path :)
-export PATH="$HOME/.toaster/bin:$PATH"
-[0m
