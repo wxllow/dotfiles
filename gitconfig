@@ -5,3 +5,10 @@
 	defaultBranch = main
 [core]
 	editor = vim
+[maintenance]
+	repo = /Users/wl/.znap/fast-syntax-highlighting
+	repo = /Users/wl/.znap/fzf-tab
+	repo = /Users/wl/.znap/zsh-autosuggestions
+	repo = /Users/wl/.znap/zsh-snap
+	repo = /Users/wl/.znap/zsh-syntax-highlighting
+	repo = /Users/wl/.znap/zsh-autocomplete
