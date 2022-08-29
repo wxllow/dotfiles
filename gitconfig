@@ -1,6 +1,7 @@
 [user]
 	email = willow@wxllow.dev
 	name = wxllow
+	signingkey = B7BBBD6A89A7E0C8
 [init]
 	defaultBranch = main
 [core]
@@ -12,3 +13,7 @@
 	repo = /Users/wl/.znap/zsh-snap
 	repo = /Users/wl/.znap/zsh-syntax-highlighting
 	repo = /Users/wl/.znap/zsh-autocomplete
+[commit]
+	gpgsign = true
+[pull]
+	rebase = false

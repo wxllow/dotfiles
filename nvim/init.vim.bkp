@@ -1,0 +1,55 @@
+" Options
+set background=dark
+set clipboard=unnamedplus
+set completeopt=noinsert,menuone,noselect
+" set cursorline
+set hidden
+set inccommand=split
+set mouse=a
+set number
+set relativenumber
+set splitbelow splitright
+set title
+set ttimeoutlen=0
+set wildmenu
+
+" Tabs size
+set expandtab
+set shiftwidth=4
+set tabstop=4
+
+" Auto syntax support
+filetype plugin indent on
+syntax on
+
+" 256-color
+set t_Co=256
+
+" File browser
+let g:netrw_banner=0
+let g:netrw_liststyle=0
+let g:netrw_browse_split=4
+let g:netrw_altv=1
+let g:netrw_winsize=25
+let g:netrw_keepdir=0
+let g:netrw_localcopydircmd='cp -r'
+
+" Plugins
+call plug#begin()
+    " Appearance
+    Plug 'vim-airline/vim-airline'
+    Plug 'ryanoasis/vim-devicons'
+
+    " Utilities
+    Plug 'sheerun/vim-polyglot'
+    Plug 'jiangmiao/auto-pairs'
+    Plug 'ap/vim-css-color'
+    Plug 'preservim/nerdtree'
+
+    " Completion / linters / formatters
+    Plug 'neoclide/coc.nvim',  {'branch': 'master', 'do': 'yarn install'}
+    Plug 'plasticboy/vim-markdown'
+
+    " Git
+    Plug 'airblade/vim-gitgutter'
+call plug#end()
