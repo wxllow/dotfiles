@@ -18,7 +18,7 @@ znap source marlonrichert/zsh-autocomplete
 # Aliases
 # - macOS -
 alias finder="open /System/Library/CoreServices/Finder.app"
-alias canary="cd ~/.local/powercord; yarn run unplug; yarn run plug; open /Applications/Discord\ Canary.app"
+alias canary="cd ~/.local/replugged; yarn run unplug canary; yarn run plug canary; open /Applications/Discord\ Canary.app"
 
 # - Generic -
 alias ytbest='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]"'
@@ -41,3 +41,5 @@ export PATH="$HOME/.toaster/bin:$PATH"
 
 # Cargo
 source "$HOME/.cargo/env"
+export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
+export PATH="/opt/homebrew/opt/pyqt@5/5.15.4_1/bin:$PATH"
