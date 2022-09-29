@@ -12,3 +12,5 @@
     ~/.config/kitty: kitty
     ~/.config/nvim: nvim
     ~/.config/mpv: mpv
+    ~/.config/awesome: awesome
+    ~/.config/polybar: polybar

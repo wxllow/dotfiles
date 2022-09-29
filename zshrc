@@ -1,9 +1,9 @@
-source ~/.znap/zsh-snap/znap.zsh
-
 # Download Znap, if it's not there yet.
-[[ -f ~/.local/znap/znap.zsh ]] ||
+[[ -f ~/.local/zsh-snap/znap.zsh ]] ||
     git clone --depth 1 -- \
-        https://github.com/marlonrichert/zsh-snap.git ~/.local/znap
+        https://github.com/marlonrichert/zsh-snap.git ~/.local/zsh-snap
+
+source ~/.local/zsh-snap/znap.zsh  # Start Znap
 
 PROMPT="%F{039}%n@%m %F{141}%~ » %f"
 znap prompt
@@ -13,7 +13,7 @@ znap source Aloxaf/fzf-tab
 znap source zsh-users/zsh-autosuggestions
 znap source zdharma-continuum/fast-syntax-highlighting
 znap source marlonrichert/zsh-autocomplete
-
+znap source ohmyzsh/ohmyzsh lib/history.zsh
 
 # Aliases
 # - macOS -
