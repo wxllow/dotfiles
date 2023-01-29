@@ -134,5 +134,5 @@ gdk-pixbuf
 heroic-games-launcher-bin
 libselinux
 libtiff5
-paru
+paru-bin
 visual-studio-code-bin
