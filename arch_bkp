@@ -1,0 +1,2 @@
+pacman -Qqne > arch_pkglist.txt
+pacman -Qqem >> arch_pkglist.txt

@@ -5,7 +5,7 @@
 
 source ~/.local/zsh-snap/znap.zsh  # Start Znap
 
-PROMPT="%F{039}%n@%m %F{141}%~ » %f"
+PROMPT="%F{039}%n@%m %F{141}%~ » "
 znap prompt
 
 # Plugins
