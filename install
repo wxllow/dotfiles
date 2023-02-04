@@ -13,3 +13,12 @@ git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+
+# Check if pacman and paru are installed
+if command -v pacman &> /dev/null; then
+    if command -v paru &> /dev/null; then
+        echo "Installing pacman packages..."
+    else
+	echo "Install paru and rerun to install packages!"
+    fi
+fi
