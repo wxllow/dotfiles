@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # Download Znap, if it's not there yet.
 [[ -f ~/.local/zsh-snap/znap.zsh ]] ||
     git clone --depth 1 -- \
@@ -18,13 +20,16 @@ znap source ohmyzsh/ohmyzsh lib/history.zsh
 # Aliases
 # - macOS -
 alias finder="open /System/Library/CoreServices/Finder.app"
-alias canary="cd ~/.local/replugged; yarn run unplug canary; yarn run plug canary; open /Applications/Discord\ Canary.app"
+alias canary="cd ~/.local/replugged; git pull; yarn run unplug canary; yarn run plug canary; open /Applications/Discord\ Canary.app"
 
 # - Generic -
 alias ytbest='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]"'
 alias startmongo="nohup mongod --dbpath ~/.db/mongo &>/dev/null &"
 alias uuidhex='python3 -c "import uuid; print(uuid.uuid4().hex)"'
 alias vim="nvim"
+
+# Homebrew opts
+export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 # PATH
 # - macOS -
@@ -43,3 +48,6 @@ export PATH="$HOME/.toaster/bin:$PATH"
 source "$HOME/.cargo/env"
 export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
 export PATH="/opt/homebrew/opt/pyqt@5/5.15.4_1/bin:$PATH"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
