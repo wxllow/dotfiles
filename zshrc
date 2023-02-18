@@ -1,26 +1,15 @@
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-# Download Znap, if it's not there yet.
-[[ -f ~/.local/zsh-snap/znap.zsh ]] ||
-    git clone --depth 1 -- \
-        https://github.com/marlonrichert/zsh-snap.git ~/.local/zsh-snap
 
-source ~/.local/zsh-snap/znap.zsh  # Start Znap
+if ! command -v fig &> /dev/null; then
+    echo "Fig is recommended!"
+fi
 
 PROMPT="%F{039}%n@%m %F{141}%~ » "
-znap prompt
-
-# Plugins
-znap source Aloxaf/fzf-tab
-znap source zsh-users/zsh-autosuggestions
-znap source zdharma-continuum/fast-syntax-highlighting
-znap source marlonrichert/zsh-autocomplete
-znap source ohmyzsh/ohmyzsh lib/history.zsh
 
 # Aliases
 # - macOS -
 alias finder="open /System/Library/CoreServices/Finder.app"
-alias canary="cd ~/.local/replugged; git pull; yarn run unplug canary; yarn run plug canary; open /Applications/Discord\ Canary.app"
 
 # - Generic -
 alias ytbest='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]"'
