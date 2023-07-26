@@ -1,20 +1,10 @@
 [user]
 	email = willow@wxllow.dev
 	name = wxllow
-	signingkey = B7BBBD6A89A7E0C8
 [init]
 	defaultBranch = main
 [core]
-	editor = vim
-[maintenance]
-	repo = /Users/wl/.znap/fast-syntax-highlighting
-	repo = /Users/wl/.znap/fzf-tab
-	repo = /Users/wl/.znap/zsh-autosuggestions
-	repo = /Users/wl/.znap/zsh-snap
-	repo = /Users/wl/.znap/zsh-syntax-highlighting
-	repo = /Users/wl/.znap/zsh-autocomplete
-[commit]
-	gpgsign = true
+	editor = nvim
 [pull]
 	rebase = false
 [credential "https://github.com"]
