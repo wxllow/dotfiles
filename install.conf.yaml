@@ -6,4 +6,6 @@
     ~/.config/kitty: kitty
     ~/.config/nvim: nvim
     ~/.config/mpv: mpv
-    ~/.config/waybar waybar
+    ~/.config/hypr: hyprland
+    ~/.config/mako: mako
+    ~/.config/waybar: waybar
