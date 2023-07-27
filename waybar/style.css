@@ -3,7 +3,7 @@
 	border-radius: 10px;
     font-family: "JetbrainsMono Nerd Font" ;
 	font-size: 15px;
-	min-height: 10px;
+	min-height: 24px;
 }
 
 window#waybar {
@@ -77,6 +77,18 @@ window#waybar.hidden {
 	transition: none;
 	color: #161320;
 	background: #bd93f9;
+}
+
+#bluetooth {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #161320;
+	background: #B5E8E0;
 }
 
 #pulseaudio {

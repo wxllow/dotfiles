@@ -1,16 +1,18 @@
 {
 	"layer": "top",
 	"modules-left": ["cpu","memory"],
-	"modules-center": ["river/tags"],
-	"modules-right": ["tray","network","pulseaudio#sink","pulseaudio#source","clock","battery"],
+	"modules-center": [],
+	"modules-right": ["tray","network","bluetooth","pulseaudio#sink","pulseaudio#source","clock","battery"],
 	
 	"pulseaudio#sink": {
+		"interval": 1,
 		"scroll-step": 5,
 	        "format": "{icon} {volume}%",
 		"format-muted": "󰝟",
 		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
 		"format-icons": {
-			"default": ["", "", ""]
+			"default": ["", "", ""],
+			"headphone": "󰋋"
 		},
         	"on-click-right": "/usr/bin/pavucontrol",
         	"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
@@ -27,15 +29,14 @@
         	"on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +1%",
 	},
 
-    "river/tags": {
-		"num-tags": 6
-    },
+
 	"network": {
 		"format-disconnected": "󰤭 Disconnected",
 		"format-wifi": " {ifname}",
 		"format-ethernet": "󰈀 {ifname}",
 		"tooltip-format": "{ifname}",
-		"tooltip-format-wifi": "{essid} ({signalStrength}%)"
+		"tooltip-format-wifi": "{essid} ({signalStrength}%)",
+		"on-click": "kitty -e nmtui"
 	},
 	"backlight": {
 		"tooltip": false,
@@ -102,8 +103,14 @@
         "interval": 15,
         "on-click": "alacritty -e paru -Syu && notify-send 'The system has been updated' "
     },
-    "custom/wallpaper":{
-        "format":" ",
-        "on-click": "bash ~/.config/system_scripts/pkill_bc"
+    "bluetooth": {
+    	"on-click": "blueberry",
+	"format": "󰂯",
+	"format-off": "󰂲",
+	"format-connected": "󰂱",
+	"format-connected-battery": "󰂱 {device_battery_percentage}%",
+	"tooltip-format": "{controller_alias}\t{controller_address}",
+  	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+  	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
     }
 }
