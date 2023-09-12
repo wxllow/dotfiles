@@ -34,8 +34,8 @@
 		"format-disconnected": "󰤭 Disconnected",
 		"format-wifi": " {ifname}",
 		"format-ethernet": "󰈀 {ifname}",
-		"tooltip-format": "{ifname}",
-		"tooltip-format-wifi": "{essid} ({signalStrength}%)",
+		"tooltip-format": "{ifname} - {ipaddr}",
+		"tooltip-format-wifi": "{ifname} - {essid} ({signalStrength}%) - {ipaddr}",
 		"on-click": "kitty -e nmtui"
 	},
 	"backlight": {
@@ -66,7 +66,7 @@
     },
     "cpu": {
         "interval": 15,
-        "format": " {}%",
+        "format": " {usage}%",
         "max-length": 10
     },
     "memory": {
