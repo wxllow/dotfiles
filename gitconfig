@@ -1,7 +1,6 @@
 [user]
 	email = willow@wxllow.dev
 	name = wxllow
-	signingkey = B7BBBD6A89A7E0C8
 [init]
 	defaultBranch = main
 [core]
@@ -19,7 +18,7 @@
 	rebase = false
 [credential "https://github.com"]
 	helper = 
-	helper = !/usr/bin/gh auth git-credential
+	helper = !/opt/homebrew/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = 
-	helper = !/usr/bin/gh auth git-credential
+	helper = !/opt/homebrew/bin/gh auth git-credential

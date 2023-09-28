@@ -30,8 +30,6 @@ export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="/Applications/CrossOver.app/Contents/SharedSupport/CrossOver/CrossOver-Hosted Application/:$PATH"
 
 # - Generic -
-# Add toaster to path :)
-export PATH="$HOME/.toaster/bin:$PATH"
 
 # Cargo
 source "$HOME/.cargo/env"
@@ -40,3 +38,21 @@ export PATH="/opt/homebrew/opt/pyqt@5/5.15.4_1/bin:$PATH"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+# pnpm
+export PNPM_HOME="/Users/wl/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+export OPENAI_API_KEY="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"
+
+# bun completions
+[ -s "/Users/wl/.bun/_bun" ] && source "/Users/wl/.bun/_bun"
+-e 
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export GOPATH="$HOME/Projects"
