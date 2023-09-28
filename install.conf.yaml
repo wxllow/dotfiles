@@ -2,15 +2,11 @@
 
 - link:
     ~/.gitconfig: gitconfig
-    ~/.ssh/config:
-        path: ssh/config
-        create: true
     ~/.zshrc: zshrc
-    ~/.xinitrc: xinitrc
-    ~/.config/alacritty: alacritty
-    ~/.config/picom: picom
     ~/.config/kitty: kitty
     ~/.config/nvim: nvim
     ~/.config/mpv: mpv
-    ~/.config/awesome: awesome
-    ~/.config/polybar: polybar
+    ~/.config/hypr: hyprland
+    ~/.config/mako: mako
+    ~/.config/waybar: waybar
+    ~/.config/wofi: wofi
