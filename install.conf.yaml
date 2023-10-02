@@ -10,3 +10,4 @@
     ~/.config/mako: mako
     ~/.config/waybar: waybar
     ~/.config/wofi: wofi
+    ~/.local/bin/scripts: scripts
