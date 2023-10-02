@@ -1,0 +1,15 @@
+Host arch
+	HostName arch.local
+	User wl
+
+Host wxllow
+	HostName 144.202.34.12
+	User wl
+
+Host mc
+	HostName 155.138.203.140
+	User wl
+
+# Fig ssh integration. Keep at the bottom of this file.
+Match all
+  Include ~/.fig/ssh
