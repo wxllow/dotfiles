@@ -1,10 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-
-if ! command -v fig &> /dev/null; then
-    echo "Fig is recommended!"
-fi
-
 PROMPT="%F{039}%n@%m %F{141}%~ » "
 
 # Aliases
@@ -47,11 +40,10 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-export OPENAI_API_KEY="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"
-
 # bun completions
 [ -s "/Users/wl/.bun/_bun" ] && source "/Users/wl/.bun/_bun"
--e 
+-e
+
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
