@@ -3,6 +3,8 @@
 - link:
     ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc
+    ~/.zsh_plugins.txt: zsh_plugins.txt
+    ~/.antidote: antidote
     ~/.config/kitty: kitty
     ~/.config/nvim: nvim
     ~/.config/mpv: mpv
