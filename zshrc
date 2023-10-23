@@ -1,4 +1,5 @@
-case "${unameOut}" in
+
+case "$(uname -a)" in
     Darwin*)    machine=Mac;;
     *)          machine=Linux;;
 esac
@@ -13,26 +14,21 @@ print() {
 }
 
 # ---- Load antidote (zsh plugin manager) ----
-# Set the name of the static .zsh plugins file antidote will generate.
-zsh_plugins=$HOME/.zsh_plugins.zsh
+# source antidote
+source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 
-# Ensure you have a .zsh_plugins.txt file where you can add plugins.
-[[ -f ${zsh_plugins:r}.txt ]] || touch ${zsh_plugins:r}.txt
-
-# Lazy-load antidote.
-fpath+=(${ZDOTDIR:-~}/.antidote)
-autoload -Uz $fpath[-1]/antidote
-
-# Generate static file in a subshell when .zsh_plugins.txt is updated.
-if [[ ! $zsh_plugins -nt ${zsh_plugins:r}.txt ]]; then
-  (antidote bundle <${zsh_plugins:r}.txt >|$zsh_plugins)
-fi
-
-# Source your static plugins file.
-source $zsh_plugins
+# initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
+antidote load
 
 prompt_newline='%666v'
 PROMPT=" $PROMPT"
+
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search # Up
+bindkey "^[[B" down-line-or-beginning-search # Down
 
 # Aliases
 alias ytbest='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]"'
@@ -46,6 +42,7 @@ alias vim="nvim"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export GOPATH="$HOME/Projects"
+export GOBIN="$HOME/go/bin"
 
 # ---- macOS Specific ----
 if [ "$machine" = "Mac" ]; then
@@ -67,4 +64,6 @@ if [ "$machine" = "Mac" ]; then
   source "$HOME/.cargo/env"
   export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
   export PATH="/opt/homebrew/opt/pyqt@5/5.15.4_1/bin:$PATH"
+
+  export PATH="$HOME/go/bin:$PATH"
 fi
