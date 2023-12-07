@@ -32,6 +32,7 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 
 # Aliases
 alias ytbest='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]"'
+alias ytaudio='yt-dlp -f "bestaudio[ext=m4a]"'
 alias uuidhex='python3 -c "import uuid; print(uuid.uuid4().hex)"'
 alias vim="nvim"
 
@@ -67,3 +68,13 @@ if [ "$machine" = "Mac" ]; then
 
   export PATH="$HOME/go/bin:$PATH"
 fi
+
+# pnpm
+export PNPM_HOME="/Users/wl/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+# bun completions
+[ -s "/Users/wl/.bun/_bun" ] && source "/Users/wl/.bun/_bun"
