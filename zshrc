@@ -5,6 +5,7 @@ case "$(uname -a)" in
 esac
 
 HISTFILE=~/.zsh_history
+SAVEHIST=1000
 
 autoload -Uz compinit
 compinit
