@@ -1,0 +1,7 @@
+
+(com.github.Aylur.ags:218873): Gjs-WARNING **: 19:48:58.772: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+  _init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+Gjs-Console-Message: 19:48:59.084: [LOG] Styles loaded
+selection cancelled

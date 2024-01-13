@@ -68,6 +68,10 @@ if [ "$machine" = "Mac" ]; then
   export PATH="/opt/homebrew/opt/pyqt@5/5.15.4_1/bin:$PATH"
 
   export PATH="$HOME/go/bin:$PATH"
+else
+  if [[ "$(tty)" == "/dev/tty1" ]]; then
+    Hyprland
+  fi
 fi
 
 # pnpm

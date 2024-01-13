@@ -14,3 +14,5 @@
     ~/.config/wofi: wofi
     ~/.local/bin/scripts: scripts
     ~/.config/gtklock: gtklock
+    ~/.config/ags: ags
+    ~/.config/swaylock: swaylock
