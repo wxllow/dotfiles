@@ -44,7 +44,7 @@ elif [ "$backend" = "pywal" ]; then
     
     cat color_generation/pywal_to_material.scss >> $HOME/.cache/ags/user/generated_colors.txt
     if [ "$2" = "--apply" ]; then
-        sassc $HOME/.cache/ags/user/generated_colors.txt $HOME/.cache/ags/user/generated_colors_classes.scss --style compact
+        sass $HOME/.cache/ags/user/generated_colors.txt $HOME/.cache/ags/user/generated_colors_classes.scss --style compact
         sed -i "s/ { color//g" $HOME/.cache/ags/user/generated_colors_classes.scss
         sed -i "s/\./$/g" $HOME/.cache/ags/user/generated_colors_classes.scss
         sed -i "s/}//g" $HOME/.cache/ags/user/generated_colors_classes.scss

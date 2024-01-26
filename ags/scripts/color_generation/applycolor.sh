@@ -52,7 +52,7 @@ apply_gtklock() {
     if [ ! -f "scripts/templates/gtklock/main.scss" ]; then
         echo "SCSS not found. Fallback to CSS."
     else
-        sassc ~/.config/ags/scripts/templates/gtklock/main.scss ~/.config/gtklock/style.css
+        sass ~/.config/ags/scripts/templates/gtklock/main.scss ~/.config/gtklock/style.css
         return
     fi
     
@@ -142,7 +142,7 @@ apply_gtk() { # Using gradience-cli
 }
 
 apply_ags() {
-    sassc "$HOME"/.config/ags/scss/main.scss "$HOME"/.config/ags/style.css
+    sass "$HOME"/.config/ags/scss/main.scss "$HOME"/.config/ags/style.css
     ags run-js 'openColorScheme.value = true; Utils.timeout(2000, () => openColorScheme.value = false);'
     ags run-js "App.resetCss(); App.applyCss('${HOME}/.config/ags/style.css');"
 }
