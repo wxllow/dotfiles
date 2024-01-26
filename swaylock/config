@@ -7,7 +7,7 @@ clock
 timestr=%R
 #datestr=%a, %e of %B
 
-color=000000dd
+color=000000ff
 
 #fade-in=0.1
 #effect-blur=20x2

@@ -17,7 +17,10 @@ const TrackProgress = () => {
     const mpris = Mpris.getPlayer("");
     if (!mpris) return;
     // Set circular progress value
-    circprog.css = `font-size: ${Math.max((mpris.position / mpris.length) * 100, 0)}px;`;
+    circprog.css = `font-size: ${Math.max(
+      (mpris.position / mpris.length) * 100,
+      0
+    )}px;`;
   };
   return AnimatedCircProg({
     className: "bar-music-circprog",
@@ -77,7 +80,12 @@ export const ModuleMusic = () =>
                         setup: (self) =>
                           self.hook(Mpris, (label) => {
                             const mpris = Mpris.getPlayer("");
-                            label.label = `${mpris !== null && mpris.playBackStatus == "Playing" ? "pause" : "play_arrow"}`;
+                            label.label = `${
+                              mpris !== null &&
+                              mpris.playBackStatus == "Playing"
+                                ? "pause"
+                                : "play_arrow"
+                            }`;
                           }),
                       }),
                     ],
@@ -106,12 +114,15 @@ export const ModuleMusic = () =>
                 setup: (self) =>
                   self.hook(Mpris, (label) => {
                     const mpris = Mpris.getPlayer("");
-                    if (mpris)
-                      label.label =
-                        `${trimTrackTitle(mpris.trackTitle)} • ${mpris.trackArtists.join(", ")}`.replace(
-                          "\n",
-                          " "
-                        );
+                    if (
+                      mpris &&
+                      `${mpris.trackTitle}${mpris.trackArtists.join(
+                        ", "
+                      )}`.trim() !== ""
+                    )
+                      label.label = `${trimTrackTitle(
+                        mpris.trackTitle
+                      )} • ${mpris.trackArtists.join(", ")}`.replace("\n", " ");
                     else label.label = "No media";
                   }),
               }),
