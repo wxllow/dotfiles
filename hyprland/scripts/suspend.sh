@@ -6,4 +6,4 @@ swayidle -w \
     resume 'hyprctl dispatch dpms on' \
     after-resume 'hyprctl dispatch dpms on' \
     before-sleep 'swaylock' \
-    lock 'swaylock -d'
+    lock 'swaylock'
