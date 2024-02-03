@@ -4,7 +4,7 @@ font=Rubik
 font-size=23
 
 clock
-timestr=%R
+timestr=%r
 #datestr=%a, %e of %B
 
 color=000000ff
