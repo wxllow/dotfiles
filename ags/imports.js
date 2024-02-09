@@ -36,11 +36,11 @@ globalThis["Notifications"] = Notifications;
 const { exec } = Utils;
 export const SCREEN_WIDTH = Number(
   exec(
-    `bash -c "xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1 | head -1" | awk '{print $1}'`
+    `bash -c "xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1 | head -1" | awk '{print $1/1.6}'`
   )
 );
 export const SCREEN_HEIGHT = Number(
   exec(
-    `bash -c "xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f2 | head -1" | awk '{print $1}'`
+    `bash -c "xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f2 | head -1" | awk '{print $1/1.6}'`
   )
 );

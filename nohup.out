@@ -5,3 +5,825 @@
 
 Gjs-Console-Message: 19:48:59.084: [LOG] Styles loaded
 selection cancelled
+
+(com.github.Aylur.ags:251570): Gjs-WARNING **: 13:37:58.302: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+  _init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+failed to open uinput device: Permission denied
+Gjs-Console-Message: 13:37:58.666: [LOG] Styles loaded
+
+(com.github.Aylur.ags:251570): Gjs-Console-WARNING **: 13:37:58.669: Window.focusable is DEPRECATED, use Window.keymode
+
+(com.github.Aylur.ags:251570): Gjs-Console-WARNING **: 13:37:58.720: Window.focusable is DEPRECATED, use Window.keymode
+
+(com.github.Aylur.ags:251570): Gjs-Console-WARNING **: 13:37:58.751: Window.focusable is DEPRECATED, use Window.keymode
+
+(com.github.Aylur.ags:251570): Gjs-Console-WARNING **: 13:37:58.776: Window.focusable is DEPRECATED, use Window.keymode
+
+(com.github.Aylur.ags:251570): Gjs-Console-WARNING **: 13:37:58.806: Window.focusable is DEPRECATED, use Window.keymode
+Gjs-Console-Message: 13:37:58.821: CPF2
+config parsed
+config parsed
+Gjs-Console-Message: 13:37:58.848: Added item undefined: [object instance wrapper GType:Ags_Box jsobj@0x22c312f0678 native@0xaaaada37b900]
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:07.990: Attempting to call back into JSAPI during the sweeping phase of GC. This is most likely caused by not destroying a Clutter actor or Gtk+ widget with ::destroy signals connected, but can also be caused by using the destroy(), dispose(), or remove() vfuncs. Because it would crash the application, it has been blocked and the JS callback not invoked.
+The offending signal was destroy on Ags_EventBox 0xaaaad9bf1260.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:07.991: Attempting to call back into JSAPI during the sweeping phase of GC. This is most likely caused by not destroying a Clutter actor or Gtk+ widget with ::destroy signals connected, but can also be caused by using the destroy(), dispose(), or remove() vfuncs. Because it would crash the application, it has been blocked and the JS callback not invoked.
+The offending signal was destroy on Ags_Box 0xaaaad9bf04f0.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:07.991: Attempting to call back into JSAPI during the sweeping phase of GC. This is most likely caused by not destroying a Clutter actor or Gtk+ widget with ::destroy signals connected, but can also be caused by using the destroy(), dispose(), or remove() vfuncs. Because it would crash the application, it has been blocked and the JS callback not invoked.
+The offending signal was destroy on Ags_Box 0xaaaad9bef150.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:07.991: Attempting to call back into JSAPI during the sweeping phase of GC. This is most likely caused by not destroying a Clutter actor or Gtk+ widget with ::destroy signals connected, but can also be caused by using the destroy(), dispose(), or remove() vfuncs. Because it would crash the application, it has been blocked and the JS callback not invoked.
+The offending signal was destroy on Ags_DrawingArea 0xaaaad9bdccc0.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:07.991: Attempting to call back into JSAPI during the sweeping phase of GC. This is most likely caused by not destroying a Clutter actor or Gtk+ widget with ::destroy signals connected, but can also be caused by using the destroy(), dispose(), or remove() vfuncs. Because it would crash the application, it has been blocked and the JS callback not invoked.
+The offending signal was destroy on Ags_DrawingArea 0xaaaad9bdccc0.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:07.991: Attempting to call back into JSAPI during the sweeping phase of GC. This is most likely caused by not destroying a Clutter actor or Gtk+ widget with ::destroy signals connected, but can also be caused by using the destroy(), dispose(), or remove() vfuncs. Because it would crash the application, it has been blocked and the JS callback not invoked.
+The offending signal was destroy on Ags_DrawingArea 0xaaaad9bdccc0.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:07.991: Attempting to call back into JSAPI during the sweeping phase of GC. This is most likely caused by not destroying a Clutter actor or Gtk+ widget with ::destroy signals connected, but can also be caused by using the destroy(), dispose(), or remove() vfuncs. Because it would crash the application, it has been blocked and the JS callback not invoked.
+The offending signal was destroy on Ags_DrawingArea 0xaaaad9bdccc0.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:07.991: Attempting to call back into JSAPI during the sweeping phase of GC. This is most likely caused by not destroying a Clutter actor or Gtk+ widget with ::destroy signals connected, but can also be caused by using the destroy(), dispose(), or remove() vfuncs. Because it would crash the application, it has been blocked and the JS callback not invoked.
+The offending signal was destroy on Ags_DrawingArea 0xaaaad9bdccc0.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:34.565: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b7320 b   resource:///com/github/Aylur/ags/widgets/widget.js:218 (1e34387c13d0 @ 125)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7ce0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:34.566: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b7320 b   resource:///com/github/Aylur/ags/widgets/widget.js:221 (1e34387c13d0 @ 238)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7ce0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:34.566: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b7320 b   resource:///com/github/Aylur/ags/widgets/widget.js:223 (1e34387c13d0 @ 287)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7ce0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:37.110: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b73f0 b   resource:///com/github/Aylur/ags/widgets/widget.js:218 (1e34387c13d0 @ 125)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:37.110: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b73f0 b   resource:///com/github/Aylur/ags/widgets/widget.js:221 (1e34387c13d0 @ 238)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:37.110: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b73f0 b   resource:///com/github/Aylur/ags/widgets/widget.js:223 (1e34387c13d0 @ 287)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:43.010: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b73f0 b   resource:///com/github/Aylur/ags/widgets/widget.js:218 (1e34387c13d0 @ 125)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:43.010: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b73f0 b   resource:///com/github/Aylur/ags/widgets/widget.js:221 (1e34387c13d0 @ 238)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:43.010: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b73f0 b   resource:///com/github/Aylur/ags/widgets/widget.js:223 (1e34387c13d0 @ 287)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:46.082: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b73f0 b   resource:///com/github/Aylur/ags/widgets/widget.js:218 (1e34387c13d0 @ 125)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:46.083: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b73f0 b   resource:///com/github/Aylur/ags/widgets/widget.js:221 (1e34387c13d0 @ 238)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:38:46.083: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b73f0 b   resource:///com/github/Aylur/ags/widgets/widget.js:223 (1e34387c13d0 @ 287)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:43.197: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b78b0 b   resource:///com/github/Aylur/ags/widgets/widget.js:218 (1e34387c13d0 @ 125)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8270 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:43.197: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b78b0 b   resource:///com/github/Aylur/ags/widgets/widget.js:221 (1e34387c13d0 @ 238)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8270 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:43.198: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b78b0 b   resource:///com/github/Aylur/ags/widgets/widget.js:223 (1e34387c13d0 @ 287)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8270 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:43.677: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b7980 b   resource:///com/github/Aylur/ags/widgets/widget.js:218 (1e34387c13d0 @ 125)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8340 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:43.677: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b7980 b   resource:///com/github/Aylur/ags/widgets/widget.js:221 (1e34387c13d0 @ 238)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8340 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:43.677: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b7980 b   resource:///com/github/Aylur/ags/widgets/widget.js:223 (1e34387c13d0 @ 287)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8340 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:43.992: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b73f0 b   resource:///com/github/Aylur/ags/widgets/widget.js:218 (1e34387c13d0 @ 125)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:43.992: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b73f0 b   resource:///com/github/Aylur/ags/widgets/widget.js:221 (1e34387c13d0 @ 238)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:43.992: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b73f0 b   resource:///com/github/Aylur/ags/widgets/widget.js:223 (1e34387c13d0 @ 287)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+Gjs-Console-Message: 13:39:45.693: Added item :1.1631: [object instance wrapper GType:Ags_Box jsobj@0x22c312f0678 native@0xaaaada37b900]
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:48.723: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b7640 b   resource:///com/github/Aylur/ags/widgets/widget.js:218 (1e34387c13d0 @ 125)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8270 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:48.724: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b7640 b   resource:///com/github/Aylur/ags/widgets/widget.js:221 (1e34387c13d0 @ 238)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8270 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:48.724: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b7640 b   resource:///com/github/Aylur/ags/widgets/widget.js:223 (1e34387c13d0 @ 287)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8270 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:48.927: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b78b0 b   resource:///com/github/Aylur/ags/widgets/widget.js:218 (1e34387c13d0 @ 125)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8270 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:48.927: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b78b0 b   resource:///com/github/Aylur/ags/widgets/widget.js:221 (1e34387c13d0 @ 238)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8270 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:48.927: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b78b0 b   resource:///com/github/Aylur/ags/widgets/widget.js:223 (1e34387c13d0 @ 287)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8270 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:53.419: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b6db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:218 (1e34387c13d0 @ 125)
+#1   fffffc4b7500 b   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7b80 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   fffffc4b8d80 b   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9460 b   self-hosted:203 (1e343878a560 @ 245)
+#5   fffffc4b9bc0 b   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:53.419: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b6db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:221 (1e34387c13d0 @ 238)
+#1   fffffc4b7500 b   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7b80 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   fffffc4b8d80 b   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9460 b   self-hosted:203 (1e343878a560 @ 245)
+#5   fffffc4b9bc0 b   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:53.419: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b6db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:223 (1e34387c13d0 @ 287)
+#1   fffffc4b7500 b   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7b80 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   fffffc4b8d80 b   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9460 b   self-hosted:203 (1e343878a560 @ 245)
+#5   fffffc4b9bc0 b   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:56.293: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b8a20 b   resource:///com/github/Aylur/ags/widgets/widget.js:218 (1e34387c13d0 @ 125)
+#1   fffffc4b8ad0 b   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8b80 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   fffffc4b9a00 b   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9b00 b   self-hosted:203 (1e343878a560 @ 245)
+#5   fffffc4b9bc0 b   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:56.294: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b8a20 b   resource:///com/github/Aylur/ags/widgets/widget.js:221 (1e34387c13d0 @ 238)
+#1   fffffc4b8ad0 b   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8b80 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   fffffc4b9a00 b   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9b00 b   self-hosted:203 (1e343878a560 @ 245)
+#5   fffffc4b9bc0 b   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:56.294: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b8a20 b   resource:///com/github/Aylur/ags/widgets/widget.js:223 (1e34387c13d0 @ 287)
+#1   fffffc4b8ad0 b   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8b80 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   fffffc4b9a00 b   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9b00 b   self-hosted:203 (1e343878a560 @ 245)
+#5   fffffc4b9bc0 b   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:56.623: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b8a20 b   resource:///com/github/Aylur/ags/widgets/widget.js:218 (1e34387c13d0 @ 125)
+#1   fffffc4b8ad0 b   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8b80 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   fffffc4b9a00 b   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9b00 b   self-hosted:203 (1e343878a560 @ 245)
+#5   fffffc4b9bc0 b   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:56.623: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b8a20 b   resource:///com/github/Aylur/ags/widgets/widget.js:221 (1e34387c13d0 @ 238)
+#1   fffffc4b8ad0 b   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8b80 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   fffffc4b9a00 b   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9b00 b   self-hosted:203 (1e343878a560 @ 245)
+#5   fffffc4b9bc0 b   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:56.624: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b8a20 b   resource:///com/github/Aylur/ags/widgets/widget.js:223 (1e34387c13d0 @ 287)
+#1   fffffc4b8ad0 b   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8b80 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   fffffc4b9a00 b   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9b00 b   self-hosted:203 (1e343878a560 @ 245)
+#5   fffffc4b9bc0 b   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:58.010: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b7640 b   resource:///com/github/Aylur/ags/widgets/widget.js:218 (1e34387c13d0 @ 125)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8270 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:58.010: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b7640 b   resource:///com/github/Aylur/ags/widgets/widget.js:221 (1e34387c13d0 @ 238)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8270 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:39:58.010: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b7640 b   resource:///com/github/Aylur/ags/widgets/widget.js:223 (1e34387c13d0 @ 287)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8270 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.078: Object .Ags_Icon (0xaaaadaaffea0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.078: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.078: Object .Ags_Icon (0xaaaadab09b40), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.078: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.079: Object .Ags_Icon (0xaaaadab13bd0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.079: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.079: Object .Ags_Icon (0xaaaadab1d4c0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.079: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.079: Object .Ags_Icon (0xaaaadab268f0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.079: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.079: Object .Ags_Icon (0xaaaadab2fd40), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.079: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.080: Object .Ags_Icon (0xaaaadadca850), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.080: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.080: Object .Ags_Icon (0xaaaadab125f0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.080: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.080: Object .Ags_Icon (0xaaaadaddf750), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.080: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.080: Object .Ags_Icon (0xaaaad9e9fd70), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:07.080: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:08.515: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b78b0 b   resource:///com/github/Aylur/ags/widgets/widget.js:218 (1e34387c13d0 @ 125)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8270 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:08.515: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b78b0 b   resource:///com/github/Aylur/ags/widgets/widget.js:221 (1e34387c13d0 @ 238)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8270 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:08.515: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b78b0 b   resource:///com/github/Aylur/ags/widgets/widget.js:223 (1e34387c13d0 @ 287)
+#1   aaaad8f12198 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b8270 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f12100 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9920 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12068 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:852 (1e34387ed380 @ 15)
+#7   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:10.799: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b73f0 b   resource:///com/github/Aylur/ags/widgets/widget.js:218 (1e34387c13d0 @ 125)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:10.799: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b73f0 b   resource:///com/github/Aylur/ags/widgets/widget.js:221 (1e34387c13d0 @ 238)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:10.799: Object .Ags_DrawingArea (0xaaaad9bdccc0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b73f0 b   resource:///com/github/Aylur/ags/widgets/widget.js:223 (1e34387c13d0 @ 287)
+#1   aaaad8f12190 i   file:///home/wl/.config/ags/widgets/bar/workspaces_hyprland.js:45 (22c31263060 @ 43)
+#2   fffffc4b7db0 b   resource:///com/github/Aylur/ags/widgets/widget.js:43 (1e34387bc5b0 @ 110)
+#3   aaaad8f120f8 i   resource:///com/github/Aylur/ags/service/hyprland.js:153 (22c31250c40 @ 216)
+#4   fffffc4b9390 b   self-hosted:203 (1e343878a560 @ 245)
+#5   aaaad8f12060 i   resource:///com/github/Aylur/ags/service/hyprland.js:146 (22c31250bf0 @ 207)
+#6   aaaad8f11fc0 i   self-hosted:1461 (12f3d3e9ece0 @ 30)
+#7   fffffc4b9c60 b   self-hosted:852 (1e34387ed380 @ 15)
+#8   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.932: Object .Ags_Icon (0xaaaada73ddb0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.932: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: Object .Ags_Icon (0xaaaada4ce7d0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: Object .Ags_Icon (0xaaaadac20310), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: Object .Ags_Icon (0xaaaadac8d330), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: Object .Ags_Icon (0xaaaada501fb0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: Object .Ags_Icon (0xaaaad8e85be0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: Object .Ags_Icon (0xaaaadae361a0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: Object .Ags_Icon (0xaaaada7a9da0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: Object .Ags_Icon (0xaaaad8e7a3f0), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: Object .Ags_Icon (0xaaaadab7f900), has been already disposed — impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.
+== Stack trace for context 0xaaaad8e446f0 ==
+#0   fffffc4b9a30 b   file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131 (12f3d3e78600 @ 26)
+#1   fffffc4b9ad0 b   resource:///com/github/Aylur/ags/utils/timeout.js:14 (1e34387aeba0 @ 6)
+#2   aaaad8f11ef8 i   resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266 (1e343877c420 @ 139)
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:24.933: JS ERROR: TypeError: self.get_parent() is null
+DesktopEntryButton/setup/<@file:///home/wl/.config/ags/widgets/overview/searchbuttons.js:131:47
+timeout/<@resource:///com/github/Aylur/ags/utils/timeout.js:14:9
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:266:34
+
+[253828:253828:0206/134026.690938:ERROR:policy_logger.cc(156)] :components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc(161) Cloud management controller initialization aborted as CBCM is not enabled. Please use the `--enable-chrome-browser-cloud-management` command line flag to enable it if you are not using the official Google Chrome build.
+[253872:253872:0206/134040.613705:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!
+[253872:253872:0206/134044.003274:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 2 times!
+[253872:253872:0206/134044.011136:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 3 times!
+
+(com.github.Aylur.ags:251570): Gjs-CRITICAL **: 13:40:50.737: Attempting to call back into JSAPI during the sweeping phase of GC. This is most likely caused by not destroying a Clutter actor or Gtk+ widget with ::destroy signals connected, but can also be caused by using the destroy(), dispose(), or remove() vfuncs. Because it would crash the application, it has been blocked and the JS callback not invoked.
+The offending signal was access-point-removed on NMDeviceWifi 0xaaaad948db50.
+== Stack trace for context 0xaaaad8e446f0 ==
