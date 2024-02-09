@@ -173,7 +173,7 @@ const BarResourceValue = (name, icon, command) =>
     ],
   });
 
-const BarResource = (name, icon, command) => {
+const BarResource = (name, icon, command, details_name, details_command) => {
   const resourceLabel = Label({
     className: "txt-smallie txt-onSurfaceVariant",
   });
@@ -202,7 +202,20 @@ const BarResource = (name, icon, command) => {
           .then((output) => {
             resourceCircProg.css = `font-size: ${Number(output)}px;`;
             resourceLabel.label = `${Math.round(Number(output))}%`;
-            widget.tooltipText = `${name}: ${Math.round(Number(output))}%`;
+
+            if (details_name) {
+              execAsync(["bash", "-c", details_command])
+                .then((details_output) => {
+                  widget.tooltipText = `${name}: ${Math.round(
+                    Number(output)
+                  )}%\n\n${details_name}: ${Math.round(
+                    Number(details_output)
+                  )}%`;
+                })
+                .catch(print);
+            } else {
+              widget.tooltipText = `${name}: ${Math.round(Number(output))}%`;
+            }
           })
           .catch(print)
       ),
@@ -243,7 +256,7 @@ const Volume = () => {
     vpack: "center",
     hpack: "center",
   });
-  const iconBox = MaterialIcon("a", "small");
+  const iconBox = MaterialIcon("no_sound", "small");
 
   const widget = Widget.EventBox({
     onPrimaryClickRelease: () =>
@@ -275,11 +288,13 @@ const Volume = () => {
           ].find(([threshold]) => threshold <= vol)[1];
 
           resourceCircProg.css = `font-size: ${vol}px;`;
-          resourceLabel.label = `${Math.round(vol)}%`;
+          resourceLabel.label = Audio.speaker.stream.isMuted
+            ? ""
+            : `${Math.round(vol)}%`;
           widget.tooltipText = `${Audio.speaker.description} - ${Math.round(
             vol
           )}%`;
-          iconBox.label = icon;
+          iconBox.label = Audio.speaker.stream.isMuted ? "no_sound" : icon;
         }),
     }),
   });
@@ -341,16 +356,18 @@ export const ModuleSystem = () =>
                     child: BarResource(
                       "RAM usage",
                       "memory_alt",
-                      `free | awk '/^Mem/ {printf("%.2f\\n", ($3/$2) * 100)}'`
-                    ),
-                  }),
-                  BarGroup({
-                    child: BarResource(
+                      `free | awk '/^Mem/ {printf("%.2f\\n", ($3/$2) * 100)}'`,
                       "Swap usage",
-                      "swap_horiz",
                       `free | awk '/^Swap/ {printf("%.2f\\n", ($3/$2) * 100)}'`
                     ),
                   }),
+                  // BarGroup({
+                  //   child: BarResource(
+                  //     "Swap usage",
+                  //     "swap_horiz",
+                  //     `free | awk '/^Swap/ {printf("%.2f\\n", ($3/$2) * 100)}'`
+                  //   ),
+                  // }),
                 ],
               }),
             ],
