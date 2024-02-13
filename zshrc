@@ -36,6 +36,7 @@ alias ytbest='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]"'
 alias ytaudio='yt-dlp -f "bestaudio[ext=m4a]"'
 alias uuidhex='python3 -c "import uuid; print(uuid.uuid4().hex)"'
 alias vim="nvim"
+alias dnf="dnf5"
 
 # bun completions
 [ -s "$HOME/bun/_bun" ] && source "$HOME/.bun/_bun"
@@ -74,6 +75,8 @@ else
   if [[ "$(tty)" == "/dev/tty1" ]]; then
     Hyprland
   fi
+
+  
 fi
 
 # pnpm

@@ -223,6 +223,64 @@ const BarResource = (name, icon, command, details_name, details_command) => {
   return widget;
 };
 
+const Ram = () => {
+  const resourceLabel = Label({
+    className: "txt-smallie txt-onSurfaceVariant",
+  });
+  const resourceCircProg = AnimatedCircProg({
+    className: "bar-batt-circprog",
+    vpack: "center",
+    hpack: "center",
+  });
+  const widget = Box({
+    className: "spacing-h-4 txt-onSurfaceVariant",
+    children: [
+      resourceLabel,
+      Overlay({
+        child: Widget.Box({
+          vpack: "center",
+          className: "bar-batt",
+          homogeneous: true,
+          children: [MaterialIcon("memory_alt", "small")],
+        }),
+        overlays: [resourceCircProg],
+      }),
+    ],
+    setup: (self) =>
+      self.poll(5000, () =>
+        execAsync([
+          "bash",
+          "-c",
+          `free -h | awk '/^Mem/ {gsub("i","B",$3); print $3}'`,
+        ])
+          .then((output) => {
+            execAsync([
+              "bash",
+              "-c",
+              `free | awk ''/^Mem/' {printf("%.2f\\n", ($3/$2) * 100)}'`,
+            ]).then((perc) => {
+              resourceCircProg.css = `font-size: ${Number(perc)}px;`;
+            });
+            resourceLabel.label = `${output}`;
+
+            execAsync([
+              "bash",
+              "-c",
+              `free | awk '/^Swap/ {printf("%.2f\\n", ($3/$2) * 100)}'`,
+            ])
+              .then((details_output) => {
+                widget.tooltipText = `RAM: ${output}\n\nSwap: ${Math.round(
+                  Number(details_output)
+                )}%`;
+              })
+              .catch(print);
+          })
+          .catch(print)
+      ),
+  });
+  return widget;
+};
+
 /*
 import Widget from 'resource:///com/github/Aylur/ags/widget.js';
 import Audio from 'resource:///com/github/Aylur/ags/service/audio.js';
@@ -352,15 +410,7 @@ export const ModuleSystem = () =>
                             <(grep 'cpu ' /proc/stat) <(sleep 1;grep 'cpu ' /proc/stat)`
                     ),
                   }),
-                  BarGroup({
-                    child: BarResource(
-                      "RAM usage",
-                      "memory_alt",
-                      `free | awk '/^Mem/ {printf("%.2f\\n", ($3/$2) * 100)}'`,
-                      "Swap usage",
-                      `free | awk '/^Swap/ {printf("%.2f\\n", ($3/$2) * 100)}'`
-                    ),
-                  }),
+                  Ram(),
                   // BarGroup({
                   //   child: BarResource(
                   //     "Swap usage",
@@ -390,7 +440,7 @@ export const ModuleSystem = () =>
                     child: BarResource(
                       "RAM usage",
                       "memory_alt",
-                      `free | awk '/^Mem/ {printf("%.2f\\n", ($3/$2) * 100)}'`
+                      `free | awk ''/^Mem/' {printf("%.2f\\n", ($3/$2) * 100)}'`
                     ),
                   }),
                   BarGroup({
