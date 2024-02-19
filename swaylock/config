@@ -54,3 +54,7 @@ caps-lock-bs-hl-color=470400
 # caps-lock-bs-hl-color=ee2e24FF
 # disable-caps-lock-text
 text-caps-lock-color=d4d4d4
+
+indicator-idle-visible
+
+
