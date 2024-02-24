@@ -37,6 +37,7 @@ alias ytaudio='yt-dlp -f "bestaudio[ext=m4a]"'
 alias uuidhex='python3 -c "import uuid; print(uuid.uuid4().hex)"'
 alias vim="nvim"
 alias dnf="dnf5"
+alias xway="env -u WAYLAND_DISPLAY"
 
 # bun completions
 [ -s "$HOME/bun/_bun" ] && source "$HOME/.bun/_bun"
