@@ -1,116 +1,96 @@
 {
-	"layer": "top",
-	"modules-left": ["cpu","memory"],
-	"modules-center": [],
-	"modules-right": ["tray","network","bluetooth","pulseaudio#sink","pulseaudio#source","clock","battery"],
-	
-	"pulseaudio#sink": {
-		"interval": 1,
-		"scroll-step": 5,
-	        "format": "{icon} {volume}%",
-		"format-muted": "󰝟",
-		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
-		"format-icons": {
-			"default": ["", "", ""],
-			"headphone": "󰋋"
-		},
-        	"on-click-right": "/usr/bin/pavucontrol",
-        	"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
-        	"on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%"
-	},
-	"pulseaudio#source": {
-		"tooltip": false,
-        	"format" : "{format_source}",
-        	"format-source": " {volume}%",
-   		"format-source-muted": "",
-        	"on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
-        	"on-click-right": "/usr/bin/pavucontrol",
-        	"on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -1%",
-        	"on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +1%",
-	},
-
-
-	"network": {
-		"format-disconnected": "󰤭 Disconnected",
-		"format-wifi": " {ifname}",
-		"format-ethernet": "󰈀 {ifname}",
-		"tooltip-format": "{ifname} - {ipaddr}",
-		"tooltip-format-wifi": "{ifname} - {essid} ({signalStrength}%) - {ipaddr}",
-		"on-click": "kitty -e nmtui"
-	},
-	"backlight": {
-		"tooltip": false,
-		"format": " {}%",
-		"interval":1,
-        "on-scroll-up": "light -A 5",
-		"on-scroll-down": "light -U 5"
-	},
-    "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 20
-        },
-        "format": "{icon}  {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-icons": ["", "", "", "", ""]
+    "layer": "top",
+    "modules-left": ["hyprland/window"],
+    "modules-center": ["mpris", "clock", "custom/picker"],
+    "modules-right": ["cpu", "memory", "tray", "custom/warp", "pulseaudio", "battery", "network", "bluetooth"],
+    "custom/warp": {
+	"format": "{}",
+	"interval": 1,
+	"exec": "if [[ $(warp-cli status | awk '{print $3}') == *Connecting* ]] || [[ $(warp-cli status | awk '{print $3}') == *Connected* ]]; then echo '󰅟'; else echo ''; fi",
+	"on-click": "if [[ $(warp-cli status | awk '{print $3}') == *Connecting* ]] || [[ $(warp-cli status | awk '{print $3}') == *Connected* ]] ; then warp-cli disconnect; else warp-cli connect; fi"
     },
-	"tray":{
-		"icon-size":18,
-		"spacing": 10
-	},
-    "clock": {
-        "interval": 1,
-        "format": "{:%m/%d/%Y %I:%M:%S %p }"
+    "hyprland/window": {
+    	"format": "{title}",
+	"max-length": 200,
     },
     "cpu": {
-        "interval": 15,
-        "format": " {usage}%",
-        "max-length": 10
+   "interval": 2,
+    "format": "{usage}%  ",
+    "max-length": 10
+   },
+   "memory": {
+   "interval": 2,
+    "format": "{used}G  ",
+    "max-length": 10
+   },
+    "hyprland/workspaces": {
+      "format": "{name}",
+      "format": "{icon}",
+      "tooltip": false,
+      "all-outputs": true,
+      "format-icons": {
+        "active": "",
+        "default": ""
+      }
     },
-    "memory": {
-        "interval": 30,
-        "format": " {used:0.1f}G",
-        "max-length": 10
+    "custom/picker": {
+        "format": "",
+	"on-click": "hyprpicker -a"
     },
-    "custom/media": {
-        "interval": 30,
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 20,
-        "format-icons": {
-            "spotify": " ",
-            "default": " "
-        },
-        "escape": true,
-        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
-        "on-click": "playerctl play-pause"
+    "clock": {
+      "format": "{:%I:%M:%S • %A, %m/%d}",
+      "interval": 1
     },
-    "custom/launcher":{
-        "format": " ",
-        "on-click": "rofi -show drun",
-        "on-click-right": "killall rofi"
+    "backlight": {
+      "format": "{icon}  {percent}%",
+      "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
-    "custom/power":{
-        "format": " ",
-        "on-click": "bash ~/.config/rofi/leave/leave.sh",
-    },
-    "custom/updates":{
-        "format": "{} Update(s)",
-        "exec": "checkupdates | wc -l",
-        "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
-        "interval": 15,
-        "on-click": "alacritty -e paru -Syu && notify-send 'The system has been updated' "
+    "pulseaudio": {
+      "format": "{volume}%  {icon} ",
+      "format-muted": "",
+      "tooltip": false,
+      "format-icons": {
+        "headphone": "",
+        "default": ["", "", "󰕾", "󰕾", "󰕾", "", "", ""]
+      },
+      "scroll-step": 1,
+      "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+      "on-click-right": "pavucontrol"
     },
     "bluetooth": {
-    	"on-click": "blueberry",
-	"format": "󰂯",
-	"format-off": "󰂲",
-	"format-connected": "󰂱",
-	"format-connected-battery": "󰂱 {device_battery_percentage}%",
-	"tooltip-format": "{controller_alias}\t{controller_address}",
-  	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
-  	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
-    }
+      "format": "",
+      "format-disabled": "", // an empty format will hide the module
+      "format-connected": "󰂱",
+      "tooltip-format": "{device_enumerate}",
+      "tooltip-format-enumerate-connected": "{device_alias}   {device_address}",
+      "on-click": "blueman-manager"
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    },
+    "network": {
+      "format": "{ifname}",
+      "format-wifi": " ",
+      "format-ethernet": "󰈀",
+      "format-disconnected": "󰖪 ",
+      "tooltip-format": "{essid}\n\nIP: {ipaddr}\nInterface: {ifname}\nFrequency: {frequency}Mhz",
+      "on-click": "XDG_CURRENT_DESKTOP=Gnome gnome-control-center"
+    },
+    "battery": {
+      "format": "{capacity}%  {icon}",
+      "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "format-charging": "{capacity}%  󰢟",
+      "tooltip": false,
+    },
+    "mpris": {
+	// "format": "🎵",
+	"format-playing": "{status_icon}",
+	"format-paused": "{status_icon}",
+	"status-icons": {
+		"paused": "▶", 
+		"playing": "⏸"
+	},
+	// "ignored-players": ["firefox"]
+}
 }

@@ -27,7 +27,7 @@ var lastCoverPath = "";
 
 function isRealPlayer(player) {
   return (
-    !player.busName.startsWith("org.mpris.MediaPlayer2.firefox") &&
+    // !player.busName.startsWith("org.mpris.MediaPlayer2.firefox") &&
     !player.busName.startsWith("org.mpris.MediaPlayer2.playerctld")
   );
 }
@@ -89,7 +89,10 @@ const TrackProgress = ({ player, ...rest }) => {
     const player = Mpris.getPlayer();
     if (!player) return;
     // Set circular progress (see definition of AnimatedCircProg for explanation)
-    circprog.css = `font-size: ${Math.max((player.position / player.length) * 100, 0)}px;`;
+    circprog.css = `font-size: ${Math.max(
+      (player.position / player.length) * 100,
+      0
+    )}px;`;
   };
   return AnimatedCircProg({
     ...rest,
@@ -368,7 +371,9 @@ const PlayState = ({ player }) => {
               self.hook(
                 player,
                 (label) => {
-                  label.label = `${player.playBackStatus == "Playing" ? "pause" : "play_arrow"}`;
+                  label.label = `${
+                    player.playBackStatus == "Playing" ? "pause" : "play_arrow"
+                  }`;
                 },
                 "notify::play-back-status"
               ),

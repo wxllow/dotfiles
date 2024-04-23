@@ -1,15 +1,20 @@
-font=monospace 12
-width=350
-height=200
-margin=5
+font=monospace 11
+width=524
+height=150
+margin=12
 padding=0,5,10
 anchor=bottom-right
 default-timeout=5000
 border-size=2
 border-radius=10
-format=<b>%a</b> ⏵ %s\n\n%b
+border-color=#EC77B2
+format=<b>%a</b>\n%s\n\n%b
 background-color=#151718
 sort=-time
+icons=1
+icon-location=left
+on-button-left=exec makoctl menu -n "$id" wofi --dmenu -p 'Select action: '
+on-button-right=dismiss
 
 [urgency=high]
 text-color=#CD3F45
