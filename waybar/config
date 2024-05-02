@@ -21,7 +21,8 @@
    "memory": {
    "interval": 2,
     "format": "{used}G  ",
-    "max-length": 10
+    "max-length": 10,
+    "tooltip-format": "RAM: {used}G/{total}G ({percentage}%)\n\nSwap: {swapUsed}G/${swapAvail}G ({swapPercentage}%)"
    },
     "hyprland/workspaces": {
       "format": "{name}",
@@ -81,7 +82,7 @@
       "format": "{capacity}%  {icon}",
       "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
       "format-charging": "{capacity}%  󰢟",
-      "tooltip": false,
+      "tooltip-format": "{time} left\n\n{power} Watts",
     },
     "mpris": {
 	// "format": "🎵",
