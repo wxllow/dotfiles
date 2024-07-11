@@ -1,0 +1,32 @@
+{
+  "blacklist": [],
+  "cache": true,
+  "custom": {
+    "netflix.com": "Mozilla/5.0 (X11; CrOS x86_64 15633.69.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.212 Safari/537.36"
+  },
+  "exactMatch": false,
+  "faqs": false,
+  "last-update": 1714282750222,
+  "log": false,
+  "mode": "custom",
+  "parser": {},
+  "popup-os": "Linux",
+  "protected": [
+    "google.com/recaptcha",
+    "gstatic.com/recaptcha",
+    "accounts.google.com",
+    "accounts.youtube.com",
+    "gitlab.com/users/sign_in",
+    "challenges.cloudflare.com",
+    "cloudflare.com",
+    "myapps.classlink.com",
+    "launchpad.classlink.com",
+    "classlink.com"
+  ],
+  "siblings": {},
+  "ua": "     Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+  "userAgentData": true,
+  "whitelist": [],
+  "json-guid": "9d5e562a-5a58-4445-8dc9-b52aeadd211c",
+  "json-forced": false
+}

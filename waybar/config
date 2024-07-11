@@ -7,7 +7,8 @@
 	"format": "{}",
 	"interval": 1,
 	"exec": "if [[ $(warp-cli status | awk '{print $3}') == *Connecting* ]] || [[ $(warp-cli status | awk '{print $3}') == *Connected* ]]; then echo '󰅟'; else echo ''; fi",
-	"on-click": "if [[ $(warp-cli status | awk '{print $3}') == *Connecting* ]] || [[ $(warp-cli status | awk '{print $3}') == *Connected* ]] ; then warp-cli disconnect; else warp-cli connect; fi"
+	"on-click": "if [[ $(warp-cli status | awk '{print $3}') == *Connecting* ]] || [[ $(warp-cli status | awk '{print $3}') == *Connected* ]] ; then warp-cli disconnect; else warp-cli connect; fi",
+	"on-click-right": "kitty sh -c 'echo Cloudflare WARP Stautus; echo -----------------------; warp-cli status; read -n 1'"
     },
     "hyprland/window": {
     	"format": "{title}",
@@ -22,7 +23,7 @@
    "interval": 2,
     "format": "{used}G  ",
     "max-length": 10,
-    "tooltip-format": "RAM: {used}G/{total}G ({percentage}%)\n\nSwap: {swapUsed}G/${swapAvail}G ({swapPercentage}%)"
+    "tooltip-format": "RAM: {used}G/{total}G ({percentage}%)\n\nSwap: {swapUsed}G/{swapAvail}G ({swapPercentage}%)"
    },
     "hyprland/workspaces": {
       "format": "{name}",
@@ -49,7 +50,7 @@
     "pulseaudio": {
       "format": "{volume}%  {icon} ",
       "format-muted": "",
-      "tooltip": false,
+      "tooltip-format": "{desc}",
       "format-icons": {
         "headphone": "",
         "default": ["", "", "󰕾", "󰕾", "󰕾", "", "", ""]
@@ -64,6 +65,7 @@
       "format-connected": "󰂱",
       "tooltip-format": "{device_enumerate}",
       "tooltip-format-enumerate-connected": "{device_alias}   {device_address}",
+      "tooltip-format-enumerate-connected-battery": "{device_alias}   {device_address}   {device_battery_percentage}%",
       "on-click": "blueman-manager"
     },
     "tray": {
@@ -80,9 +82,16 @@
     },
     "battery": {
       "format": "{capacity}%  {icon}",
+      "interval": 5,
+      "format-critical": "<span color='#fa6d6d'>{capacity}%  {icon}</span>",
+      "format-warning": "<span color='#fad46d'>{capacity}%  {icon}</span>",
       "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
       "format-charging": "{capacity}%  󰢟",
-      "tooltip-format": "{time} left\n\n{power} Watts",
+      "tooltip-format": "{time} left\n\n{power} Watts\n\nBattery health: {health}% ({cycles} cycles)",
+      "states": {
+		"warning": 15,
+		"critical": 10
+      },
     },
     "mpris": {
 	// "format": "🎵",

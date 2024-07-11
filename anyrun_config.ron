@@ -42,5 +42,8 @@ Config(
     "libapplications.so",
     "libshell.so",
     "libtranslate.so",
+    "libdictionary.so",
+    "librink.so",
+    "libsymbols.so"
   ],
 )
