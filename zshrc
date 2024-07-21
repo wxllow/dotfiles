@@ -38,6 +38,7 @@ alias uuidhex='python3 -c "import uuid; print(uuid.uuid4().hex)"'
 alias vim="nvim"
 alias dnf="dnf5"
 alias xway="env -u WAYLAND_DISPLAY"
+alias blessnext="sudo asahi-bless --next --set-boot 1 -y"
 
 # bun completions
 [ -s "$HOME/bun/_bun" ] && source "$HOME/.bun/_bun"
