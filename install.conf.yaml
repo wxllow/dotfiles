@@ -23,4 +23,4 @@
     ~/.config/anyrun/shell.ron: anyrun_shell.ron
     ~/.config/anyrun/translate.ron: anyrun_translate.ron 
     ~/.config/anyrun/symbols.ron: anyrun_translate.ron 
-
+    ~/.config/keyd/default.conf: keyd_default.conf
