@@ -13,9 +13,6 @@
     ~/.config/waybar: waybar
     ~/.config/wofi: wofi
     ~/.local/bin/scripts: scripts
-    ~/.config/gtklock: gtklock
-    ~/.config/ags: ags
-    ~/.config/swaylock: swaylock
     ~/.config/conky: conky
     ~/.config/libinput-gestures.conf: libinput-gestures.conf
     ~/.config/anyrun/config.ron: anyrun_config.ron
