@@ -2,13 +2,19 @@
     "layer": "top",
     "modules-left": ["hyprland/window"],
     "modules-center": ["mpris", "clock", "custom/picker"],
-    "modules-right": ["cpu", "memory", "tray", "custom/warp", "pulseaudio", "battery", "network", "bluetooth"],
-    "custom/warp": {
+    "modules-right": ["cpu", "memory", "tray", "custom/vpn", "backlight", "custom/warp", "pulseaudio", "battery", "network", "bluetooth"],
+    /*"custom/warp": {
 	"format": "{}",
 	"interval": 1,
 	"exec": "if [[ $(warp-cli status | awk '{print $3}') == *Connecting* ]] || [[ $(warp-cli status | awk '{print $3}') == *Connected* ]]; then echo '󰅟'; else echo ''; fi",
 	"on-click": "if [[ $(warp-cli status | awk '{print $3}') == *Connecting* ]] || [[ $(warp-cli status | awk '{print $3}') == *Connected* ]] ; then warp-cli disconnect; else warp-cli connect; fi",
 	"on-click-right": "kitty sh -c 'echo Cloudflare WARP Stautus; echo -----------------------; warp-cli status; read -n 1'"
+    },*/
+    "custom/vpn": {
+	"format": "{}",
+	"interval": 1,
+	"exec": "if nmcli con show --active | grep -i wireguard&>/dev/null; then echo ''; else echo ''; fi",
+	"on-click": "if nmcli con show --active | grep -i wireguard&>/dev/null; then nmcli con down main; else nmcli con up main; fi"
     },
     "hyprland/window": {
     	"format": "{title}",
@@ -44,7 +50,7 @@
       "interval": 1
     },
     "backlight": {
-      "format": "{icon}  {percent}%",
+      "format": "{percent}%  {icon} ",
       "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "pulseaudio": {
@@ -77,7 +83,7 @@
       "format-wifi": " ",
       "format-ethernet": "󰈀",
       "format-disconnected": "󰖪 ",
-      "tooltip-format": "{essid}\n\nIP: {ipaddr}\nInterface: {ifname}\nFrequency: {frequency}Mhz",
+      "tooltip-format": "{essid} ({signalStrength}%)\n\nIP: {ipaddr}\nInterface: {ifname}\nFrequency: {frequency}Mhz",
       "on-click": "XDG_CURRENT_DESKTOP=Gnome gnome-control-center"
     },
     "battery": {

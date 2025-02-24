@@ -1,0 +1,5 @@
+while [ true ]; do
+	# curl https://link-ip.nextdns.io/c8ab19/93df322d20b05861 &
+	sleep 30
+done
+

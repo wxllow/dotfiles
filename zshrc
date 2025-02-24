@@ -39,6 +39,7 @@ alias vim="nvim"
 alias dnf="dnf5"
 alias xway="env -u WAYLAND_DISPLAY"
 alias blessnext="sudo asahi-bless --next --set-boot 1 -y"
+alias blessnow="sudo asahi-bless --next --set-boot 1 -y && systemctl reboot"
 
 # bun completions
 [ -s "$HOME/bun/_bun" ] && source "$HOME/.bun/_bun"

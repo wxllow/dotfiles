@@ -32,7 +32,7 @@ window#waybar {
   color: #FFDBE0;
 }
 
-#clock, #backlight, #pulseaudio, #bluetooth, #network, #battery, #tray, #mpris, #custom-picker, #cpu, #memory, #custom-warp {
+#clock, #backlight, #pulseaudio, #bluetooth, #network, #battery, #tray, #mpris, #custom-picker, #cpu, #memory, #custom-vpn, #backlight {
   border-radius: 10px;
   background-color: #1b2022;
   color: #FFDBE0;
