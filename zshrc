@@ -78,8 +78,6 @@ else
   if [[ "$(tty)" == "/dev/tty1" ]]; then
     Hyprland
   fi
-
-  
 fi
 
 # pnpm
@@ -97,3 +95,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# uutils
+export PATH="/usr/libexec/uutils-coreutils:$PATH"
