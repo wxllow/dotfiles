@@ -13,9 +13,9 @@ background-color=#151718
 sort=-time
 icons=1
 icon-location=left
-on-button-left=exec makoctl menu -n "$id" wofi --dmenu -p 'Select action: '
+on-button-left=exec makoctl menu -n "$id" -- wofi -d -p 'Select action: '
 on-button-right=dismiss
 
 [urgency=high]
 text-color=#CD3F45
-
+layer=overlay
