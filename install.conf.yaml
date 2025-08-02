@@ -11,7 +11,9 @@
     ~/.config/hypr: hyprland
     ~/.config/mako: mako
     ~/.config/waybar: waybar
-    ~/.config/wofi: wofi
     ~/.local/bin/scripts: scripts
     ~/.config/conky: conky
+    ~/.config/albert: albert
     ~/.config/libinput-gestures.conf: libinput-gestures.conf
+    ~/.config/fastfetch: fastfetch
+    ~/.p10k.zsh: p10k.zsh
