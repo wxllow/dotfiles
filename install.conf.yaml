@@ -17,3 +17,4 @@
     ~/.config/libinput-gestures.conf: libinput-gestures.conf
     ~/.config/fastfetch: fastfetch
     ~/.p10k.zsh: p10k.zsh
+    ~/.config/uwsm/env: uwsm.env
