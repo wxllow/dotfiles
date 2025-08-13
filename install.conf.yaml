@@ -11,6 +11,8 @@
     ~/.config/hypr: hyprland
     ~/.config/mako: mako
     ~/.config/waybar: waybar
+    ~/.config/wofi: wofi
+    ~/.config/ghostty: ghostty
     ~/.local/bin/scripts: scripts
     ~/.config/conky: conky
     ~/.config/albert: albert
