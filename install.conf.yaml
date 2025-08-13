@@ -15,4 +15,7 @@
     ~/.config/ghostty: ghostty
     ~/.local/bin/scripts: scripts
     ~/.config/conky: conky
+    ~/.config/albert: albert
     ~/.config/libinput-gestures.conf: libinput-gestures.conf
+    ~/.config/fastfetch: fastfetch
+    ~/.p10k.zsh: p10k.zsh
