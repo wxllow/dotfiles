@@ -2,7 +2,18 @@
     "layer": "top",
     "modules-left": ["hyprland/window"],
     "modules-center": ["mpris", "clock", "custom/picker"],
-    "modules-right": ["cpu", "memory", "tray", "custom/warp", "backlight",  "pulseaudio", "battery", "network", "bluetooth"],
+    "modules-right": ["power-profiles-daemon", "cpu", "memory", "tray", "custom/warp", "backlight",  "pulseaudio", "battery", "network", "bluetooth"],
+    "power-profiles-daemon": {
+	"format": "{icon}",
+	"tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+	"tooltip": true,
+  	"format-icons": {
+   		"default": "",
+ 		"performance": "",
+		"balanced": "",
+   		"power-saver": ""
+	 }
+    },
     "custom/warp": {
 	"format": "{}",
 	"interval": 1,

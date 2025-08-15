@@ -1,6 +1,6 @@
 * {
   border: none;
-  font-family: 'Fira Code', 'Symbols Nerd Font Mono';
+  font-family: 'Symbols Nerd Font Mono', 'Fira Code';
   font-size: 15px;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
   min-height: 2rem;
@@ -32,7 +32,7 @@ window#waybar {
   color: #FFDBE0;
 }
 
-#clock, #backlight, #pulseaudio, #bluetooth, #network, #battery, #tray, #mpris, #custom-picker, #cpu, #memory, #custom-vpn, #custom-warp, #backlight {
+#power-profiles-daemon, #clock, #backlight, #pulseaudio, #bluetooth, #network, #battery, #tray, #mpris, #custom-picker, #cpu, #memory, #custom-vpn, #custom-warp, #backlight {
   border-radius: 10px;
   background-color: #1b2022;
   color: #FFDBE0;
