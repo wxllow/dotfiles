@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["hyprland/window"],
     "modules-center": ["mpris", "clock", "custom/picker"],
-    "modules-right": ["power-profiles-daemon", "cpu", "memory", "tray", "custom/warp", "backlight",  "pulseaudio", "battery", "network", "bluetooth"],
+    "modules-right": ["power-profiles-daemon", "cpu", "tray", "custom/warp", "backlight",  "pulseaudio", "battery", "network", "bluetooth"],
     "power-profiles-daemon": {
 	"format": "{icon}",
 	"tooltip-format": "Power profile: {profile}\nDriver: {driver}",
@@ -16,7 +16,7 @@
     },
     "custom/warp": {
 	"format": "{}",
-	"interval": 1,
+	"interval": 3,
 	"exec": "if [[ $(warp-cli status | awk '{print $3}') == *Connecting* ]] || [[ $(warp-cli status | awk '{print $3}') == *Connected* ]]; then echo '󰅟'; else echo ''; fi",
 	"on-click": "if [[ $(warp-cli status | awk '{print $3}') == *Connecting* ]] || [[ $(warp-cli status | awk '{print $3}') == *Connected* ]] ; then warp-cli disconnect; else warp-cli connect; fi",
 	"on-click-right": "kitty sh -c 'echo Cloudflare WARP Stautus; echo -----------------------; warp-cli status; read -n 1'"

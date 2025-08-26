@@ -1,4 +1,5 @@
 [General]
+frontend=widgetsboxmodel
 telemetry=false
 
 [applications]
@@ -63,3 +64,14 @@ itemCount=5
 quitOnClose=false
 showCentered=true
 systemShadow=true
+
+[widgetsboxmodel-ng]
+alwaysOnTop=true
+clearOnHide=true
+displayScrollbar=false
+followCursor=true
+hideOnFocusLoss=true
+historySearch=true
+itemCount=5
+quitOnClose=false
+showCentered=true
