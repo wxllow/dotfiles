@@ -1,0 +1,6 @@
+{
+    "device": "alsa_output.usb-Apple__Inc._EarPods_CD4P9KRFHV-00.analog-stereo",
+    "device-description": "EarPods Analog Stereo",
+    "device-profile": "analog-output-headphones",
+    "preset-name": "Earpods"
+}

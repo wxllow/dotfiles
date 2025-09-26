@@ -20,3 +20,7 @@
     ~/.config/fastfetch: fastfetch
     ~/.p10k.zsh: p10k.zsh
     ~/.config/uwsm/env: uwsm.env
+    ~/.config/systemd/user/charger-event.service: charger.service
+    ~/.config/wireplumber: wireplumber
+    ~/.config/swaync: swaync
+    ~/.config/easyeffects: easyeffects

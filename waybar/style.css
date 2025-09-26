@@ -1,32 +1,41 @@
 * {
   border: none;
-  font-family: 'Symbols Nerd Font Mono', 'Fira Code';
+  font-family: 'Symbols Nerd Font Mono', 'Roboto', 'Fira Code';
   font-size: 15px;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
   min-height: 2rem;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 window#waybar {
-  background: #0B0F10;
+ background: rgba(0, 0, 0, 0);
 }
 
-#power-profiles-daemon, #clock, #backlight, #pulseaudio, #bluetooth, #network, #battery, #tray, #mpris, #custom-picker, #cpu, #memory, #custom-vpn, #custom-warp, #backlight {
-  border-radius: 10px;
-  background-color: #1b2022;
+#power-profiles-daemon, #clock, #backlight, #pulseaudio, #bluetooth, #network, #battery, #tray, #mpris, #custom-picker, #cpu, #memory, #custom-vpn, #custom-warp, #backlight, #custom-nvstat, #custom-notif {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 14px;
+  background-color: rgba(0, 0, 0, 0.8);
   color: #FFDBE0;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 8px;
   padding-right: 8px;
-  margin-right: 8px;
+  margin-right: 2px;
 }
 
-#window {
-  font-size: 14px;
-  margin-left: 8px;
+#custom-nvstat {
+  font-family: 'Simple icons', 'Symbols Nerd Font', 'Fira Code';
+
 }
+
+/*#tray {
+  margin-right: 32px;
+}
+*/
 
 /*#backlight, #bluetooth {
   border-top-right-radius: 0;

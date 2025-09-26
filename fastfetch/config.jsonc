@@ -1,9 +1,9 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "type": "builtin",
+        "type": "kitty",
+        "source": "~/.config/fastfetch/nyarch.png",
         "height": 15,
-        "width": 30,
         "padding": {
             "top": 5,
             "left": 3
@@ -18,27 +18,23 @@
         {
             "type": "host",
             "key": " PC",
-            "keyColor": "green"
+            "keyColor": "#E092BA"
         },
         {
             "type": "cpu",
             "key": "│ ├",
-            "keyColor": "green"
+            "keyColor": "#E092BA"
         },
         {
             "type": "gpu",
             "key": "│ ├󰍛",
-            "keyColor": "green"
+            "keyColor": "#E092BA"
         },
         {
             "type": "memory",
             "key": "│ ├󰍛",
-            "keyColor": "green"
-        },
-        {
-            "type": "disk",
-            "key": "└ └",
-            "keyColor": "green"
+            "keyColor": "#E092BA",
+                "size": {"binaryPrefix": "jedec"}
         },
         {
             "type": "custom",
@@ -52,53 +48,48 @@
         {
             "type": "os",
             "key": " OS",
-            "keyColor": "yellow"
+            "keyColor": "magenta"
         },
         {
             "type": "kernel",
             "key": "│ ├",
-            "keyColor": "yellow"
+            "keyColor": "magenta"
         },
         {
             "type": "bios",
             "key": "│ ├",
-            "keyColor": "yellow"
+            "keyColor": "magenta"
         },
         {
             "type": "packages",
             "key": "│ ├󰏖",
-            "keyColor": "yellow"
+            "keyColor": "magenta"
         },
         {
             "type": "shell",
             "key": "└ └",
-            "keyColor": "yellow"
+            "keyColor": "magenta"
         },
         "break",
         {
             "type": "de",
             "key": " DE",
-            "keyColor": "blue"
-        },
-        {
-            "type": "lm",
-            "key": "│ ├",
-            "keyColor": "blue"
+            "keyColor": "#71C7F2"
         },
         {
             "type": "wm",
             "key": "│ ├",
-            "keyColor": "blue"
+            "keyColor": "#71C7F2"
         },
         {
             "type": "wmtheme",
             "key": "│ ├󰉼",
-            "keyColor": "blue"
+            "keyColor": "#71C7F2"
         },
         {
             "type": "terminal",
             "key": "└ └",
-            "keyColor": "blue"
+            "keyColor": "#71C7F2"
         },
         {
             "type": "custom",

@@ -1,0 +1,2 @@
+SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ACTION=="change", \
+  ENV{SYSTEMD_USER_WANTS}="charger-event.service"

@@ -40,6 +40,7 @@ alias blessnext="sudo asahi-bless --next --set-boot 1 -y"
 alias blessnow="sudo asahi-bless --next --set-boot 1 -y && systemctl reboot"
 alias sudo='sudo '
 alias dnf='dnf5 '
+alias freepacman='sudo rm /var/lib/pacman/db.lck'
 
 # bun completions
 [ -s "$HOME/bun/_bun" ] && source "$HOME/.bun/_bun"
@@ -99,3 +100,6 @@ export PATH="/usr/libexec/uutils-coreutils:$PATH"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export LIBVIRT_DEFAULT_URI="qemu:///system"
+export JAVA_HOME=/opt/android-studio/jbr
+export ANDROID_HOME="$HOME/Android/Sdk"
+export NDK_HOME="$ANDROID_HOME/ndk/$(ls -1 $ANDROID_HOME/ndk)"

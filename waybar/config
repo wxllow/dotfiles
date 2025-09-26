@@ -1,18 +1,43 @@
 {
     "layer": "top",
-    "modules-left": ["hyprland/window"],
+    "modules-left": ["cpu", "memory", "custom/nvstat"],
     "modules-center": ["mpris", "clock", "custom/picker"],
-    "modules-right": ["power-profiles-daemon", "cpu", "tray", "custom/warp", "backlight",  "pulseaudio", "battery", "network", "bluetooth"],
+    "modules-right": ["tray", "power-profiles-daemon", "custom/warp",  "bluetooth", "network", "pulseaudio",  "battery", "custom/notif"],
     "power-profiles-daemon": {
 	"format": "{icon}",
 	"tooltip-format": "Power profile: {profile}\nDriver: {driver}",
 	"tooltip": true,
   	"format-icons": {
-   		"default": "",
+   		"default": "N/A",
  		"performance": "",
 		"balanced": "",
    		"power-saver": ""
 	 }
+    },
+      "custom/notif": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red' font='12px'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span font='12px'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red' font='12px'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span font='12px'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+    "custom/nvstat": {
+    	"format": "{}",
+	"interval": 3,
+	"exec": "if [ $(cat /sys/bus/pci/devices/0000:01:00.0/power_state) == 'D0' ]; then echo ''; fi"
     },
     "custom/warp": {
 	"format": "{}",
@@ -61,6 +86,7 @@
       "interval": 1
     },
     "backlight": {
+      "device": "/sys/class/backlight/amdgpu_bl2",
       "format": "{percent}%  {icon} ",
       "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
@@ -90,7 +116,7 @@
         "spacing": 10
     },
     "network": {
-      "format": "{ifname}",
+      "format": "󰈀",
       "format-wifi": " ",
       "format-ethernet": "󰈀",
       "format-disconnected": "󰖪 ",
@@ -102,8 +128,8 @@
       "interval": 5,
       "format-critical": "<span color='#fa6d6d'>{capacity}%  {icon}</span>",
       "format-warning": "<span color='#fad46d'>{capacity}%  {icon}</span>",
-      "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-      "format-charging": "{capacity}%  󰢟",
+      "format-icons": ["", "", "", "", ""],
+      "format-charging": "{capacity}%  ",
       "tooltip-format": "{time} left\n\n{power} Watts\n\nBattery health: {health}% ({cycles} cycles)",
       "states": {
 		"warning": 15,
@@ -115,8 +141,8 @@
 	"format-playing": "{status_icon}",
 	"format-paused": "{status_icon}",
 	"status-icons": {
-		"paused": "▶", 
-		"playing": "⏸"
+		"paused": "", 
+		"playing": ""
 	},
 	// "ignored-players": ["firefox"]
 }

@@ -1,0 +1,7 @@
+[Unit]
+Description=Run script on charger plug/unplug
+StopWhenUnneeded=yes
+
+[Service]
+Type=oneshot
+ExecStart=%h/.config/hypr/scripts/g14display.sh
